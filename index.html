@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sat Sri Rehri 🙏 – Punjab Rehri Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="floating-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <div class="main-card">
+        <header class="header-section">
+            <div class="title-with-khalsa">
+                <div class="khalsa-symbol left">☬</div>
+                <h1 class="main-title">Sat Sri Rehri 🙏</h1>
+                <div class="khalsa-symbol right">☬</div>
+            </div>
+            <p class="subtitle">A local guide to Punjab college street food rehris</p>
+            <p class="greeting">Punjab mein aapka swagat hai</p>
+        </header>
+
+        <div class="input-section">
+            <input 
+                type="text" 
+                id="user-input" 
+                class="main-input" 
+                placeholder="Type a dish (aloo tikki), a time (evening), or a Punjabi word (yrr)…"
+            />
+            <button id="send-btn" class="guide-button">Guide Me</button>
+        </div>
+
+        <div class="examples-section">
+            <p class="examples-label">Try these examples:</p>
+            <div class="example-chips">
+                <span class="chip" onclick="fillInput('evening snacks')">Evening snacks</span>
+                <span class="chip" onclick="fillInput('golgappe')">Golgappe</span>
+                <span class="chip" onclick="fillInput('aloo tikki')">Aloo Tikki</span>
+                <span class="chip" onclick="fillInput('rajma chawal')">Rajma Chawal</span>
+                <span class="chip" onclick="fillInput('morning breakfast')">Morning breakfast</span>
+                <span class="chip" onclick="fillInput('yrr ka matlab')">Yrr</span>
+            </div>
+        </div>
+
+        <div class="response-area" id="chat-messages">
+            <!-- Responses will appear here -->
+        </div>
+
+        <footer class="footer-section">
+            <p>Built using Kiro with a custom local context (product.md).<br>
+            No maps, no APIs, no live data.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
